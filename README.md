@@ -1,3 +1,6 @@
 # React-PhotoGallery
 </br>
-## `npm install`
+
+```node
+## npm install
+```
