@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "icons-music-logo";
+    src: url("../../fonts/icons/music-logo.eot") format("embedded-opentype"), url("../../fonts/icons/music-logo.woff") format("woff"), url("../../fonts/icons/music-logo.ttf") format("truetype"), url("../../fonts/icons/music-logo.svg") format("svg");
+}
+
+.bg-music {
+    color: green;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: block;
+    z-index: 101;
+    cursor: pointer;
+    border-radius: 50%;
+    /* after误差改正 */
+    padding-bottom: 1px;
+    transform-origin: 50% 50%;
+    /*旋转中心是左线*/
+    transform-style: preserve-3d;
+    /* 旋转动画 */
+    animation: icon-rotate 5s linear infinite;
+    animation-fill-mode: forwards;
+    &.is-rotate {
+        animation-play-state: running;
+    }
+    &.stop-rotate{
+        animation-play-state: paused;
+    }
+    &::after {
+        font-family: "icons-music-logo";
+        font-size: 22px;
+        content: "\e600";
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: grayscale;
+    }
+}
+
+@keyframes icon-rotate {
+    form {
+        transform: rotateZ(0deg) translateZ(1px);
+    }
+    to {
+        transform: rotateZ(360deg) translateZ(1px);
+    }
+}
