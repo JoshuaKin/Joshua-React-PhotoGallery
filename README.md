@@ -1,7 +1,7 @@
 # React-PhotoGallery
 </br>
 
-## How to load?
+## How to install?
 ```node
 $ npm install
 ```
