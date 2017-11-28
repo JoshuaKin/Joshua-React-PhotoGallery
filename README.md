@@ -7,7 +7,7 @@ $ npm install
 ```
 </br>
 
-##How to run?
+## How to run?
 ```node
 $ npm start
 ```
